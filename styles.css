@@ -1,0 +1,132 @@
+:root {
+  --bg: #0a0a0a;
+  --panel: #141414;
+  --text: #f2f2f2;
+  --muted: #9a9a9a;
+  --border: #262626;
+  --apple: #fa2d48;
+  --spotify: #1db954;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.nav nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav nav a:hover { color: var(--text); }
+
+/* Layout */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 48px 0 32px;
+}
+.hero h1 {
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.apple { color: var(--apple); }
+.spotify { color: var(--spotify); }
+.tagline {
+  font-size: 1.15rem;
+  color: var(--text);
+  max-width: 34ch;
+  margin: 0 auto 12px;
+}
+.direction {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Screenshot */
+.shot {
+  margin: 8px auto 56px;
+  max-width: 820px;
+}
+.shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+/* How it works */
+.how {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 32px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+.how h2 {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+}
+.how ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.how li { margin-bottom: 10px; }
+.how li:last-child { margin-bottom: 0; }
+
+/* Doc pages */
+.doc { max-width: 720px; padding-top: 32px; padding-bottom: 48px; }
+.doc h1 { margin-bottom: 4px; }
+.doc h2 { margin-top: 32px; font-size: 1.2rem; }
+.doc .updated { color: var(--muted); margin-top: 0; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+}
+footer p {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer a { color: var(--muted); }
+footer a:hover { color: var(--text); }
